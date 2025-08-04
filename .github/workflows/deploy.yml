@@ -17,9 +17,9 @@ jobs:
         service_account_key: ${{ secrets.GCP_SA_KEY }}
         project_id: ${{ secrets.GCP_PROJECT_ID }}
         export_default_credentials: true
-    
+
     - name: Verify auth
-	run: gcloud auth list
+        run: gcloud auth list
 
     - name: Sync files to GCS
       run: |
