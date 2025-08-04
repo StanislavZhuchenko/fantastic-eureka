@@ -19,7 +19,7 @@ jobs:
         export_default_credentials: true
 
     - name: Verify auth
-        run: gcloud auth list
+      run: gcloud auth list
 
     - name: Sync files to GCS
       run: |
